@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $generalFont;
+    background-color: #fff;
+    font-weight: 500;
+}
+
+button {
+    font-family: $generalFont;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+button,
+div {
+    -webkit-tap-highlight-color: transparent;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+}

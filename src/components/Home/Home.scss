@@ -1,0 +1,34 @@
+@import "../../styles/vars";
+
+.home {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.home__btn_filter {
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color: $accentColor;
+    border: 0px;
+    border-radius: 20px;
+
+    color: #ffffff;
+    font-size: 20px;
+
+    &:hover,
+    &:focus-visible {
+        background-color: #4a4ae8;
+    }
+}
+
+.home__error {
+    color: $titleColor;
+    font-size: 20px;
+}
+
+.home__cardsWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

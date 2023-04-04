@@ -6,3 +6,18 @@ export const fetchData = () => {
       .catch((err) => dispatch({ type: "ERROR", msg: "Unable to fetch data" }));
   };
 };
+
+export const toggleLike = (id) => ({
+  type: "TOGGLE_LIKE",
+  id,
+});
+
+export const setVisibilityFilter = (filter) => ({
+  type: "SET_VISIBILITY_FILTER",
+  filter,
+});
+
+export const VisibilityFilters = {
+  SHOW_ALL: "SHOW_ALL",
+  SHOW_COMPLETED: "SHOW_LIKED",
+};
